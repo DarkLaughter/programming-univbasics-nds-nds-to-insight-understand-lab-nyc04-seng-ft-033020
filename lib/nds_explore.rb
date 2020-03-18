@@ -17,7 +17,7 @@ def print_first_directors_movie_titles
   while counter < directors_database.size do
     puts directors_database[:name[counter]][:movie][:title[0]]
   end
-
+  counter += 1
 end
 
 [{:name=>"Stephen Spielberg",
