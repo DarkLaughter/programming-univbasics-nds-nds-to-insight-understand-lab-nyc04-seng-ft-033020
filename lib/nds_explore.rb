@@ -10,14 +10,13 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  directors_database
 
   counter = 0
 
-  for directors_database[:name][:movie][:title] in directors_database do
-    puts directors_database[:name][:movie][:title[counter]]
+  while counter < directors_database[0][:movies].size do
+    puts directors_database[0][:movies][:index][:title]
+    counter += 1
   end
-  counter += 1
 end
 
 [{:name=>"Stephen Spielberg",
